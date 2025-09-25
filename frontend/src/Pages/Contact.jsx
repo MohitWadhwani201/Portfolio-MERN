@@ -41,12 +41,22 @@ const ContactPage = () => {
       body: JSON.stringify(formData),
     });
 
-    const result = await response.json();
+    let result;
+    const contentType = response.headers.get("content-type");
 
-    if (!result.success) throw new Error(result.message || "Failed to send message");
+    // ✅ Only try to parse JSON if response is JSON
+    if (contentType && contentType.includes("application/json")) {
+      result = await response.json();
+    } else {
+      throw new Error("Server returned an invalid response");
+    }
+
+    if (!response.ok || !result.success) {
+      throw new Error(result?.message || "Failed to send message");
+    }
 
     Swal.fire({
-      title: "Success!",
+      title: "Success! 🎉",
       text: "Your message has been sent successfully! 🚀",
       icon: "success",
       confirmButtonColor: "#6366f1",
@@ -66,6 +76,7 @@ const ContactPage = () => {
     setIsSubmitting(false);
   }
 };
+
 
 
   return (
