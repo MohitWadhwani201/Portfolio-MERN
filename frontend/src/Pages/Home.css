@@ -1,0 +1,43 @@
+/* Default (mobile) */
+.home-custom-container {
+	top: 5px; /* adjust for small screens */
+	/* position: relative; ensure top works */
+}
+
+/* Small screens (sm: 640px and above) */
+@media (min-width: 640px) {
+	.home-custom-container {
+		top: 48px;
+	}
+}
+@media (min-width: 400px) {
+	.home-custom-container {
+		top: 160px;
+	}
+}
+@media (min-width: 300px) {
+	.home-custom-container {
+		top: 180px;
+	}
+}
+/* Medium screens (md: 768px and above) */
+@media (min-width: 768px) {
+	.home-custom-container {
+		top: 58px;
+	}
+}
+
+/* Large screens (lg: 1024px and above) */
+@media (min-width: 1024px) {
+	.home-custom-container {
+		top: 120px;
+		margin-left: 50px;
+	}
+}
+
+/* Extra large screens (xl: 1280px and above) */
+@media (min-width: 1280px) {
+	.home-custom-container {
+		top: 5px;
+	}
+}
