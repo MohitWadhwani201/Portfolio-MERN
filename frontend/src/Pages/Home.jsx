@@ -171,8 +171,9 @@ const Home = () => {
 	return (
 		<div className="min-h-screen bg-[#030014] overflow-hidden" id="Home">
 			<div
-				className={`home-custom-container relative z-10 transition-all duration-1000 ${isLoaded ? "opacity-100" : "opacity-0"}`}
-				
+				className={`home-custom-container relative z-10 transition-all duration-1000 ${
+					isLoaded ? "opacity-100" : "opacity-0"
+				}`}
 			>
 				<div className="container mx-auto px-[5%] sm:px-6 lg:px-[0%] min-h-screen">
 					<div className="flex flex-col lg:flex-row items-center justify-center h-screen md:justify-between gap-0 sm:gap-12 lg:gap-20">
@@ -245,13 +246,13 @@ const Home = () => {
 
 						{/* Right Column - Lottie Animation */}
 						<div
-							className="w-full py-[10%] sm:py-0 lg:w-1/2 h-auto lg:h-[600px] xl:h-[750px] relative flex items-center justify-center order-2 lg:order-2 mt-8 lg:mt-0"
+							className="w-full lg:w-1/2 h-[250px] xs:h-[280px] sm:h-[320px] md:h-[380px] lg:h-[500px] xl:h-[600px] relative flex items-center justify-center order-2 lg:order-2 mt-4 sm:mt-6 lg:mt-0"
 							onMouseEnter={() => setIsHovering(true)}
 							onMouseLeave={() => setIsHovering(false)}
 							data-aos="fade-left"
 							data-aos-delay="600"
 						>
-							<div className="relative w-80 opacity-90">
+							<div className="relative w-48 xs:w-56 sm:w-64 md:w-72 lg:w-96 xl:w-[420px] opacity-90">
 								<div
 									className={`absolute inset-0 bg-gradient-to-r from-[#6366f1]/10 to-[#a855f7]/10 rounded-3xl blur-3xl transition-all duration-700 ease-in-out ${
 										isHovering ? "opacity-50 scale-105" : "opacity-20 scale-100"
@@ -278,7 +279,7 @@ const Home = () => {
 									}`}
 								>
 									<div
-										className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-gradient-to-br from-indigo-500/10 to-purple-500/10 blur-3xl animate-[pulse_6s_cubic-bezier(0.4,0,0.6,1)_infinite] transition-all duration-700 ${
+										className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200px] h-[200px] xs:w-[220px] xs:h-[220px] sm:w-[250px] sm:h-[250px] md:w-[280px] md:h-[280px] lg:w-[350px] lg:h-[350px] xl:w-[400px] xl:h-[400px] bg-gradient-to-br from-indigo-500/10 to-purple-500/10 blur-3xl animate-[pulse_6s_cubic-bezier(0.4,0,0.6,1)_infinite] transition-all duration-700 ${
 											isHovering ? "scale-110" : "scale-100"
 										}`}
 									></div>
