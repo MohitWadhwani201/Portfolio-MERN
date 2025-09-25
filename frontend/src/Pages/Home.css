@@ -7,19 +7,19 @@
 /* Small screens (sm: 640px and above) */
 @media (min-width: 640px) {
 	.home-custom-container {
-		top: 1000px;
+		top: 100px;
 		margin-bottom: 300px;
 	}
 }
 @media (min-width: 400px) {
 	.home-custom-container {
-		top: 30px;
+		top: 50px;
 		margin-bottom: 280px;
 	}
 }
 @media (min-width: 300px) {
 	.home-custom-container {
-		top: 30px;
+		top: 80px;
 		margin-bottom: 300px;
 	}
 }
