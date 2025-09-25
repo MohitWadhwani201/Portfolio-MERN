@@ -1,6 +1,6 @@
 /* Default (mobile) */
 .home-custom-container {
-	top: 5px; /* adjust for small screens */
+	top: 50px; /* adjust for small screens */
 	/* position: relative; ensure top works */
 }
 
