@@ -38,6 +38,6 @@
 /* Extra large screens (xl: 1280px and above) */
 @media (min-width: 1280px) {
 	.home-custom-container {
-		top: 5px;
+		top: 40px;
 	}
 }
