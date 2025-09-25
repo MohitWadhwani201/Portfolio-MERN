@@ -32,11 +32,11 @@ app.post("/send-message", async (req, res) => {
 	const { name, email, message } = req.body;
 
 	if (!name || !email || !message) {
-		return res.status(400).json({ error: "All fields are required" });
+		return res.status(400).json({ success: false, error: "All fields are required" });
 	}
 
 	try {
-		// 1️⃣ Email to user (acknowledgment)
+		// Send acknowledgment email
 		await transporter.sendMail({
 			from: process.env.SMTP_USER,
 			to: email,
@@ -46,22 +46,22 @@ app.post("/send-message", async (req, res) => {
                    <p>Meanwhile, feel free to connect with me on <a href="https://www.linkedin.com/in/MohitWadhwani201" target="_blank">LinkedIn</a>.</p>
                    <p>Best regards,<br/>Mohit Wadhwani</p>`,
 		});
-
-		// 2️⃣ Email to yourself (notification)
+		// Send notification email to yourself
 		await transporter.sendMail({
 			from: process.env.SMTP_USER,
 			to: process.env.EMAIL_TO,
 			subject: `New Contact Form Submission from ${name}`,
-			html: `<h3>New Message from Portfolio Form</h3>
-                   <p><strong>Name:</strong> ${name}</p>
-                   <p><strong>Email:</strong> ${email}</p>
-                   <p><strong>Message:</strong><br/>${message}</p>`,
+			html: `<h3>New Message</h3>
+             <p><strong>Name:</strong> ${name}</p>
+             <p><strong>Email:</strong> ${email}</p>
+             <p><strong>Message:</strong> ${message}</p>`,
 		});
-		console.log("Emails sent successfully");
-		res.status(200).json({ success: true, message: "Emails sent successfully!" });
+
+		console.log("✅ Emails sent successfully");
+		return res.status(200).json({ success: true, message: "Emails sent successfully!" });
 	} catch (error) {
-		console.error("Error sending emails:", error);
-		res.status(500).json({ error: "Failed to send emails" });
+		console.error("❌ Error sending emails:", error.message || error);
+		return res.status(500).json({ success: false, error: error.message || "Failed to send emails" });
 	}
 });
 
