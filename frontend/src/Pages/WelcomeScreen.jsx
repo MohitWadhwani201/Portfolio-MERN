@@ -96,7 +96,7 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
 							</span>
 							<span className="block text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-500 text-xl sm:text-3xl">
 								<TypewriterEffect
-									text="MERN Full-Stack Developer | Java Enthusiast"
+									text="MERN Full-Stack Developer | Java Developer"
 									speed={45}
 									onComplete={handleTypewriterComplete}
 								/>
