@@ -1,6 +1,6 @@
 /* Default (mobile) */
 .home-custom-container {
-	top: 50px; /* adjust for small screens */
+	top: 70px; /* adjust for small screens */
 	/* position: relative; ensure top works */
 }
 
@@ -35,7 +35,7 @@
 @media (min-width: 1024px) {
 	.home-custom-container {
 		top: 140px;
-		margin-left: 50px;
+		margin-left: 80px;
 		/* margin-bottom: 200px; */
 	}
 }
@@ -43,6 +43,6 @@
 /* Extra large screens (xl: 1280px and above) */
 @media (min-width: 1280px) {
 	.home-custom-container {
-		top: 50px;
+		top: 80px;
 	}
 }
