@@ -116,11 +116,8 @@ const AboutPage = () => {
 	const { totalProjects, totalCertificates, YearExperience } = useMemo(() => {
 		const startDate = new Date("2022-01-01");
 		const today = new Date();
-		const experience =
-			today.getFullYear() -
-			startDate.getFullYear() -
-			(today < new Date(today.getFullYear(), startDate.getMonth(), startDate.getDate()) ? 1 : 0);
-
+		const experience = 0;
+			
 		return {
 			totalProjects: 10,
 			totalCertificates: 11,
