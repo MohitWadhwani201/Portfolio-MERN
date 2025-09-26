@@ -227,8 +227,8 @@ const Home = () => {
 									data-aos="fade-up"
 									data-aos-delay="1400"
 								>
-									<CTAButton href="#Projects" text="Projects" icon={ExternalLink} />
-									<CTAButton href="#Contact" text="Contact" icon={Mail} />
+									<CTAButton href="https://github.com/MohitWadhwani201?tab=repositories" target="_blank_" text="Projects" icon={ExternalLink} />
+									<CTAButton href="https://mail.google.com/mail/?view=cm&fs=1&to=mohit.wadhwani2.01@gmail.com" target="_blank_" text="Contact" icon={Mail} />
 								</div>
 
 								{/* Social Links */}
