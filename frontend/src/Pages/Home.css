@@ -13,14 +13,14 @@
 }
 @media (min-width: 400px) {
 	.home-custom-container {
-		top: 50px;
-		margin-bottom: 280px;
+		top: 10px;
+		margin-bottom: 180px;
 	}
 }
 @media (min-width: 300px) {
 	.home-custom-container {
-		top: 80px;
-		margin-bottom: 300px;
+		top: 10px;
+		margin-bottom: 100px;
 	}
 }
 /* Medium screens (md: 768px and above) */
