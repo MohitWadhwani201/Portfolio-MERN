@@ -4,7 +4,7 @@ import { Github, Mail, Linkedin } from "lucide-react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const TypewriterEffect = ({ text, speed = 100, onComplete }) => {
+const TypewriterEffect = ({ text, speed = 140, onComplete }) => {
 	const [displayText, setDisplayText] = useState("");
 
 	useEffect(() => {

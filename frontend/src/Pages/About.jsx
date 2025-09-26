@@ -179,7 +179,7 @@ const AboutPage = () => {
 		{ iconSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg", language: "C++" },
 		{ iconSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg", language: "MySQL" },
 		{ iconSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg", language: "MongoDB" },
-		{ iconSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cuda/cuda-original.svg", language: "CUDA C/C++" },
+		{ iconSrc: "/nvidia.png", language: "CUDA C/C++" },
 		{ iconSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg", language: "Git" },
 		{ iconSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg", language: "GitHub" },
 	];
