@@ -96,8 +96,8 @@ const ContactPage = () => {
 				</p>
 			</div>
 
-			<div className="h-auto py-10 flex items-center justify-center px-[5%] md:px-0" id="Contact">
-				<div className="container grid grid-cols-1 lg:grid-cols-[45%_55%] 2xl:grid-cols-[35%_65%] gap-12">
+			<div className="h-auto py-10 flex items-center justify-center" id="Contact">
+				<div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[45%_55%] gap-12 px-4 md:px-8">
 					<div
 						data-aos="fade-right"
 						data-aos-duration="1200"
@@ -177,7 +177,11 @@ const ContactPage = () => {
 						</div>
 					</div>
 
-					<div className="bg-white/5 backdrop-blur-xl rounded-3xl p-3 py-3 md:p-10 md:py-8 shadow-2xl transition-all duration-300 hover:shadow-[#6366f1]/10">
+					<div
+						data-aos="fade-left"
+						data-aos-duration="1200"
+						className="bg-white/5 backdrop-blur-xl rounded-3xl p-6 md:p-10 shadow-2xl transition-all duration-300 hover:shadow-[#6366f1]/10"
+					>
 						<Commentar />
 					</div>
 				</div>
