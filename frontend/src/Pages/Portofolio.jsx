@@ -110,7 +110,7 @@ export default function FullWidthTabs() {
 	const [value, setValue] = useState(0);
 	const [projects, setProjects] = useState([
 		{
-			id: 1,
+			id: 0,
 			title: "Real-Time Chat Application",
 			description:
 				"Engineered a scalable full-stack chat application using MERN stack and WebSockets for real-time messaging.",
@@ -123,11 +123,25 @@ export default function FullWidthTabs() {
 			],
 		},
 		{
+			id: 1,
+			title: "Microservice-Based Fitness Application",
+			description:
+				"Built a cloud-native fitness tracking platform using Spring Boot microservices, API Gateway, Eureka, Keycloak authentication, RabbitMQ messaging, MongoDB, and AI-powered workout recommendations.",
+			TechStack: ["Java", "Spring Boot", "Microservices", "API Gateway", "OAuth", "RabbitMQ", "MongoDB"],
+			link: "https://github.com/MohitWadhwani201/Microservice-Based-Fitness-Application",
+			img: "/projects/fitness-microservices.png",
+			details: [
+				"Built a scalable microservices-based fitness application using Spring Boot, Spring Cloud, API Gateway, Eureka, and MongoDB.",
+				"Implemented OAuth2/JWT authentication with Keycloak and event-driven communication using RabbitMQ.",
+				"Integrated Groq LLM and developed a React frontend to provide AI-powered fitness recommendations and activity tracking.",
+			],
+		},
+		{
 			id: 2,
 			title: "Chef Point – AI Recipe Recommender",
 			description:
 				"Built an intelligent recipe suggestion app based on user-provided ingredients using React.js and external APIs.",
-			TechStack: ["React.js", "JavaScript", "Rapid API"],
+			TechStack: ["React.js", "JavaScript", "LLM API", "MEN Stack","Template Prompting"],
 			link: "https://chef-point-frontend.onrender.com",
 			img: "/projects/Chef-point.png",
 			details: [
